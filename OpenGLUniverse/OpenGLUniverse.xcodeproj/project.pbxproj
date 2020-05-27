@@ -11,8 +11,8 @@
 		DD7B7D23247E626B00331963 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DD7B7D21247E626B00331963 /* Main.storyboard */; };
 		DD7B7D2F247E629700331963 /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DD7B7D2E247E629700331963 /* OpenGL.framework */; };
 		DD7B7D31247E629F00331963 /* GLUT.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DD7B7D30247E629F00331963 /* GLUT.framework */; };
-		DD7B7D43247E62BF00331963 /* libGLTools.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DD7B7D32247E62BF00331963 /* libGLTools.a */; };
 		DD7B7D48247E633E00331963 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DD7B7D47247E633E00331963 /* main.cpp */; };
+		DD8731DD247E675C005EF8CF /* libGLTools.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DD8731DC247E675C005EF8CF /* libGLTools.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,7 +23,6 @@
 		DD7B7D27247E626B00331963 /* OpenGLUniverse.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = OpenGLUniverse.entitlements; sourceTree = "<group>"; };
 		DD7B7D2E247E629700331963 /* OpenGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGL.framework; path = System/Library/Frameworks/OpenGL.framework; sourceTree = SDKROOT; };
 		DD7B7D30247E629F00331963 /* GLUT.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GLUT.framework; path = System/Library/Frameworks/GLUT.framework; sourceTree = SDKROOT; };
-		DD7B7D32247E62BF00331963 /* libGLTools.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libGLTools.a; sourceTree = "<group>"; };
 		DD7B7D34247E62BF00331963 /* GLBatchBase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GLBatchBase.h; sourceTree = "<group>"; };
 		DD7B7D35247E62BF00331963 /* math3d.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = math3d.h; sourceTree = "<group>"; };
 		DD7B7D36247E62BF00331963 /* GLTriangleBatch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GLTriangleBatch.h; sourceTree = "<group>"; };
@@ -42,6 +41,7 @@
 		DD7B7D49247E64D800331963 /* Marble.tga */ = {isa = PBXFileReference; lastKnownFileType = file; path = Marble.tga; sourceTree = "<group>"; };
 		DD7B7D4A247E64D800331963 /* Marslike.tga */ = {isa = PBXFileReference; lastKnownFileType = file; path = Marslike.tga; sourceTree = "<group>"; };
 		DD7B7D4B247E64D800331963 /* MoonLike.tga */ = {isa = PBXFileReference; lastKnownFileType = file; path = MoonLike.tga; sourceTree = "<group>"; };
+		DD8731DC247E675C005EF8CF /* libGLTools.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libGLTools.a; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -49,7 +49,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DD7B7D43247E62BF00331963 /* libGLTools.a in Frameworks */,
+				DD8731DD247E675C005EF8CF /* libGLTools.a in Frameworks */,
 				DD7B7D31247E629F00331963 /* GLUT.framework in Frameworks */,
 				DD7B7D2F247E629700331963 /* OpenGL.framework in Frameworks */,
 			);
@@ -94,7 +94,7 @@
 		DD7B7D2D247E629700331963 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				DD7B7D32247E62BF00331963 /* libGLTools.a */,
+				DD8731DC247E675C005EF8CF /* libGLTools.a */,
 				DD7B7D30247E629F00331963 /* GLUT.framework */,
 				DD7B7D2E247E629700331963 /* OpenGL.framework */,
 			);
@@ -346,6 +346,7 @@
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/OpenGLUniverse",
+					"$(PROJECT_DIR)",
 				);
 				MACOSX_DEPLOYMENT_TARGET = 10.12;
 				PRODUCT_BUNDLE_IDENTIFIER = com.hungergame.OpenGLUniverse;
@@ -371,6 +372,7 @@
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/OpenGLUniverse",
+					"$(PROJECT_DIR)",
 				);
 				MACOSX_DEPLOYMENT_TARGET = 10.12;
 				PRODUCT_BUNDLE_IDENTIFIER = com.hungergame.OpenGLUniverse;
